@@ -1,0 +1,6 @@
+python3 -m http.server 8080
+
+sudo tcpdump -i any -w capture.pcap port 8080
+
+In Wireshark filter bar, type: http.request.method == "POST"
+Press Enter
